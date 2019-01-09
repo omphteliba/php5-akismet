@@ -1,12 +1,12 @@
 # Introduction
 
-This is a simple little PHP5 class that enables you use the Akismet anti-spam service in your PHP5 application.
+This is a simple little PHP7 class that enables you use the Akismet anti-spam service in your PHP7 application.
 
 # Download
 
 Check out the git repository:
 
-	git clone git@github.com:achingbrain/php5-akismet.git
+	git clone git@github.com:omphteliba/php7-akismet.git
 
 # Installation
 
