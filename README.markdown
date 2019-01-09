@@ -10,13 +10,8 @@ Check out the git repository:
 
 # Installation
 
-Once you have cloned the repo (see Download, above) copy the file at src/main/php/net/achingbrain/Akismet.class.php to somewhere accessible to your scripts. Use include or a derivative to import it into your script.
+Once you have cloned the repo (see Download, above) copy the file at src/main/php/net/omphteliba/Akismet.class.php to somewhere accessible to your scripts. Use include or a derivative to import it into your script.
 
-Alternatively if you are running a version of PHP greater than 5.3, grab the [phar file](http://achingbrain.github.com/maven-repo/releases/net/achingbrain/php5-akismet/0.5/php5-akismet-0.5.phar) and use the following code:
-
-	<?php
-		include 'phar:///path/to/php5-akismet-0.5.phar/net/achingbrain/Akismet.class.php';
-	?>
 
 # Documentation
 
@@ -53,29 +48,6 @@ to submit mis-diagnosed spam and ham, which improves the system for everybody. S
 
 ## Changelog
 
-### Version 0.5
-
-* Deployed to GitHub instead of achingbrain.net for better collaboration in future
-* Converted project to use Maven for unit testing and documentation generation
-* Unit tests & documentaiton
-* Allowed overriding of user agent when submitting ham/spam (thanks Steven)
-
-### Version 0.4
-
-* Performance – changed HTTP version from 1.1 to 1.0 (with thanks to Jan De Poorter).
-* Performance – No longer issues a separate HTTP request to check validity of the API key with every instantiation.
-* Added a new public method 'isKeyValid' to manually check validity of the API key passed to the constructor.
-* The method 'isCommentSpam' (rather than the constructor) will now throw an exception if the API key is invalid.
-* Tidied up internal structure a bit.
-
-### Version 0.3
-
-Internal testing version
-
-### Version 0.2
-
-Initial release
-
 ### Version 0.1
 
-Internal testing version
+Internal testing version, works with Akismet 3.1.7
